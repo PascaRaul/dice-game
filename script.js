@@ -62,7 +62,7 @@ rollBtn1.addEventListener("click", function () {
   currentScoreEl1.textContent = curScore[0];
 
   // display dice
-  diceEl.src = `dice/dice-${randomNumber}.png`;
+  diceEl.src = `img-dice/dice-${randomNumber}.png`;
 });
 
 holdBtn1.addEventListener("click", function () {
@@ -96,7 +96,7 @@ rollBtn2.addEventListener("click", function () {
   currentScoreEl2.textContent = curScore[1];
 
   // display dice
-  diceEl.src = `dice/dice-${randomNumber}.png`;
+  diceEl.src = `img-dice/dice-${randomNumber}.png`;
 });
 
 holdBtn2.addEventListener("click", function () {
@@ -129,23 +129,3 @@ resetBtn.addEventListener("click", function () {
   diceEl.classList.add("hidden");
   resetButton();
 });
-
-///////////////////////////////////////////////////////////
-// Fixing flexbox gap property missing in some Safari versions
-function checkFlexGap() {
-  var flex = document.createElement("div");
-  flex.style.display = "flex";
-  flex.style.flexDirection = "column";
-  flex.style.rowGap = "1px";
-
-  flex.appendChild(document.createElement("div"));
-  flex.appendChild(document.createElement("div"));
-
-  document.body.appendChild(flex);
-  var isSupported = flex.scrollHeight === 1;
-  flex.parentNode.removeChild(flex);
-  console.log(isSupported);
-
-  if (!isSupported) document.body.classList.add("no-flexbox-gap");
-}
-checkFlexGap();

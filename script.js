@@ -20,12 +20,6 @@ let player1 = true;
 let player2 = false;
 let playing = true;
 
-// const switchPlayer = function () {
-//   const lista = score[0];
-//   console.log(lista);
-// };
-// switchPlayer();
-
 const toggleButton = function () {
   rollBtn2.classList.toggle("active-btn");
   holdBtn2.classList.toggle("active-btn");

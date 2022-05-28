@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 ,maximum-scale = 1.0"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Dice game</title>
+  </head>
+  <body>
+    <button class="btn rules">Rules</button>
+    <div class="rules-container hidden">
+      <ul>
+        <li>
+          Each turn, a player repeatedly rolls a die until either a 1 is rolled
+          or the player decides to "hold":
+        </li>
+        <li>
+          If the player rolls a 1, they score nothing and it becomes the next
+          player's turn.
+        </li>
+        <li>
+          If the player rolls any other number, it is added to their
+          <strong>current score</strong> and the player's turn continues.
+        </li>
+        <li>
+          If a player chooses to "hold", their <strong>current score</strong> is
+          added to their
+          <strong>total score</strong>
+          , and it becomes the next player's turn.
+        </li>
+        <li>The first player to score 100 or more points wins.</li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <button class="btn reset">RESET</button>
+      <h3 class="heading-1">PLAYER1</h3>
+      <div class="player1 grid active-border">
+        <div class="total">
+          Total score: <span class="total-score--1">0</span>
+        </div>
+        <div class="current">
+          Current score: <span class="current-score--1">0</span>
+        </div>
+        <div class="btn-container">
+          <button class="btn roll--1 active-btn">Roll 🎲</button>
+          <button class="btn hold--1 margin--r active-btn">Hold ⏸</button>
+        </div>
+      </div>
+
+      <div class="dice">
+        <img class="dice-img hidden" src="img-dice/dice-1.png" alt="dice" />
+      </div>
+
+      <div class="player2 grid">
+        <h3 class="heading-2">PLAYER2</h3>
+        <div class="total">
+          Total score: <span class="total-score--2">0</span>
+        </div>
+        <div class="current">
+          Current score: <span class="current-score--2">0</span>
+        </div>
+        <div class="btn-container">
+          <button class="btn roll--2 roll margin--l">Roll 🎲</button>
+          <button class="btn hold--2 hold">Hold ⏸</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

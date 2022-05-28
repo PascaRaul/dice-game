@@ -5,17 +5,12 @@
 }
 
 html {
-  /* 8.8px =1rem */
   font-size: 55%;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   color: rgb(57, 57, 57);
-  /* height: 100vh; */
-  /* overflow: hidden; */
-
-  /* position: relative; */
 }
 
 .margin--r {
@@ -68,25 +63,20 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   align-items: center;
-
-  /* column-gap: 10px; */
 }
 
 .player1 {
   background-color: #fff9db;
-  /* z-index: 1; */
 }
 
 .player2 {
   background-color: #fff4e6;
   position: relative;
-  /* z-index: -1; */
 }
 
 .dice {
   background-color: #b3ae99;
   border: 0 1px solid #333;
-  /* border-radius: 10px; */
 }
 
 .total {
@@ -96,7 +86,7 @@ body {
   border-bottom: 1px solid #333;
   grid-row: 1;
   grid-column: 1/-1;
-  /* justify-self: center; */
+
   align-self: start;
 }
 .current {
@@ -104,7 +94,7 @@ body {
   grid-row: 2;
   grid-column: 1/-1;
   padding: 2rem 4rem;
-  /* border: 2px solid black; */
+
   justify-self: center;
 }
 
@@ -199,7 +189,6 @@ li:last-child {
 
 @media (max-width: 30em) {
   html {
-    /* 6.4 px  40%*/
     font-size: 25%;
   }
 

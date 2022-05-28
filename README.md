@@ -11,3 +11,6 @@ Each turn, a player repeatedly rolls a die until either a 1 is rolled or the pla
 -If the player rolls any other number, it is added to their current score and the player's turn continues.<br />
 -If a player chooses to "hold", their current score is added to their total score , and it becomes the next player's turn.<br />
 The first player to score 100 or more points wins.
+
+
+--the app is not fully responsive, for better user experience use laptop/desktop--
